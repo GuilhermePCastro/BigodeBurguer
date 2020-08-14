@@ -1,0 +1,390 @@
+.header__banner img{
+  width: 100%;
+}
+
+.main__ingredients {
+  display: flex;
+  width: 100%;
+}
+
+.main__ingredients .ingredients__group {
+  width: 100%;
+}
+
+.main__ingredients .ingredients__group + .ingredients__group{
+  margin-left: 60px;
+}
+
+@media screen and (max-width: 950px) {
+  .main__ingredients {
+    flex-direction: column;
+  }
+  .main__ingredients .ingredients__group + .ingredients__group{
+    margin-left: 0px;
+    margin-top: 40px;
+  }
+}
+
+.main__ingredients input{
+  display: none;
+}
+
+.ingredients__ingredient {
+  width: 100%;
+  display: block;
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px #000;
+  border: 3px solid white;
+  border-radius: 10px;
+
+  margin-bottom: 60px;
+
+  cursor: pointer;
+}
+
+@media screen and (max-width: 950px) {
+  .ingredients__ingredient {
+    margin-bottom: 40px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .ingredients__ingredient {
+    margin-bottom: 35px;
+  }
+}
+
+.ingredients__ingredient:last-child {
+  margin-bottom: 0;
+}
+
+.ingredient__appearance {
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+
+  background: url('../imgs/lousa-tst.png');
+
+  border-radius: 10px;
+
+  padding: 40px;
+}
+
+.ingredient__appearance span{
+  text-transform: uppercase;
+  font-size: 45px;
+  color: white;
+}
+
+@media screen and (max-width:550px){
+  .ingredient__appearance {
+    padding: 30px;
+  }
+  .ingredient__appearance span{
+    text-transform: uppercase;
+    font-size: 40px;
+    color: white;
+  }
+}
+
+@media screen and (max-width:495px){
+  /* .ingredient__appearance {
+    padding: 20px;
+  } */
+  .ingredient__appearance span{
+    text-transform: uppercase;
+    font-size: 32px;
+    color: white;
+  }
+}
+
+@media screen and (max-width:450px){
+  .ingredient__appearance {
+    padding: 20px;
+  }
+  .ingredient__appearance span{
+    text-transform: uppercase;
+    font-size: 24px;
+    color: white;
+  }
+}
+
+.ingredient__appearance img{
+  filter: grayscale(100%);
+  -webkit-filter: grayscale(100%);
+  -moz-filter: grayscale(100%);
+  -ms-filter: grayscale(100%);
+  -o-filter: grayscale(100%)
+}
+
+@media screen and (max-width: 495px) {
+  
+  .ingredients__ingredient--salada img {
+    height: 50px;
+  }
+  .ingredients__ingredient--paes img {
+    height: 55px;
+  }
+  .ingredients__ingredient--carnes img {
+    width: 55px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .ingredients__ingredient {
+    height: 86px;
+  }
+
+  .ingredients__ingredient .ingredient__appearance{
+    height: 80px;
+  }
+
+  input[type=checkbox]:checked + .ingredients__ingredient {
+    height: auto;
+  }
+
+  .ingredients__ingredient--paes img {
+    height: 45px;
+  }
+  .ingredients__ingredient--queijos img {
+    width: 45px;
+  }
+  .ingredients__ingredient--salada img {
+    height: 45px;
+  }
+  .ingredients__ingredient--carnes img {
+    height: 45px;
+  }
+  .ingredients__ingredient--molhos img {
+    width: 50px;
+  }
+  .ingredients__ingredient--adicionais img {
+    width: 55px;
+  }
+}
+
+/* ===========================
+  lista de itens
+============================= */
+.ingredient__list {
+  width: 100%;
+  border-top: 3px solid white;
+  display: none;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+
+  margin: 0;
+  padding: 30px 40px;
+  list-style: none;
+
+  color: white;
+  text-transform: uppercase;
+  font-size: 28px;
+}
+
+@media screen and (max-width: 500px) {
+  .ingredient__list {
+    padding: 15px 15px;
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .ingredient__list {
+    padding: 15px 15px;
+    font-size: 18px;
+  }
+}
+
+.list__item {
+  width: 100%;
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+
+  margin-top: 10px;
+}
+
+.item__name {
+  position: relative;
+  overflow: hidden;
+  width: 80%;
+}
+
+.item__name::after {
+  margin-left: 5px;
+  content: '......................................................................................................................................................................';
+  position: absolute;
+  width: 100%;
+}
+
+.item__price {
+  margin-left: 3px;
+  width: 20%;
+  position: relative;
+}
+
+input[type=checkbox]:checked + .ingredients__ingredient .ingredient__list{
+  display: flex !important;
+}
+
+/* ----------------------------------------------------------
+  ESTILIZAÇÃO DE CADA ITEM APÓS SER SELECIONADO
+------------------------------------------------------------- */
+
+input[type=checkbox]:checked  
++ .ingredients__ingredient .ingredient__appearance img {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%)
+}
+
+.ingredients__ingredient:hover .ingredient__appearance img {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%)
+}
+
+/* ------------------------------ 
+  PÃES
+-------------------------------- */
+
+.ingredients__ingredient--paes:hover 
+.ingredient__appearance {
+  background: #E8882D;
+}
+
+input[type=checkbox]:checked  
++ .ingredients__ingredient--paes {
+  background: #E8882D;
+}
+
+input[type=checkbox]:checked  
++ .ingredients__ingredient--paes 
+.ingredient__appearance{
+  background: #E8882D;
+  border: none !important;
+  border-radius: 10px 10px 0 0;
+}
+
+/* ------------------------------ 
+  CARNES
+-------------------------------- */
+.ingredients__ingredient--carnes:hover 
+.ingredient__appearance {
+  background: #6E2F08;
+}
+
+input[type=checkbox]:checked + 
+.ingredients__ingredient--carnes{
+  background: #6E2F08;
+}
+
+input[type=checkbox]:checked + 
+.ingredients__ingredient--carnes 
+.ingredient__appearance{
+  background: #6E2F08;
+}
+
+/* ------------------------------ 
+  QUEIJOS
+-------------------------------- */
+
+.ingredients__ingredient--queijos:hover 
+.ingredient__appearance {
+  background: #FF9505;
+}
+
+input[type=checkbox]:checked + 
+.ingredients__ingredient--queijos{
+  background: #FF9505
+}
+
+input[type=checkbox]:checked + 
+.ingredients__ingredient--queijos 
+.ingredient__appearance{
+  background: #FF9505
+}
+
+/* ------------------------------ 
+  MOLHOS
+-------------------------------- */
+.ingredients__ingredient--molhos:hover 
+.ingredient__appearance {
+  background: #941B0C;
+}
+
+input[type=checkbox]:checked + 
+.ingredients__ingredient--molhos{
+  background: #941B0C;
+}
+
+input[type=checkbox]:checked + 
+.ingredients__ingredient--molhos 
+.ingredient__appearance{
+  background: #941B0C;
+}
+
+/* ------------------------------ 
+  SALADA
+-------------------------------- */
+.ingredients__ingredient--salada:hover 
+.ingredient__appearance {
+  background: #447604;
+}
+
+input[type=checkbox]:checked + 
+.ingredients__ingredient--salada{
+  background: #447604;
+}
+
+input[type=checkbox]:checked + 
+.ingredients__ingredient--salada 
+.ingredient__appearance{
+  background: #447604;
+}
+
+/* ------------------------------ 
+  ADICIONAIS
+-------------------------------- */
+.ingredients__ingredient--adicionais:hover 
+.ingredient__appearance {
+  background: #A44200;
+}
+
+input[type=checkbox]:checked + 
+.ingredients__ingredient--adicionais{
+  background: #A44200;
+}
+
+input[type=checkbox]:checked + 
+.ingredients__ingredient--adicionais 
+.ingredient__appearance{
+  background: #A44200;
+}
+
+.main__done .title{
+  margin-bottom: 2rem !important;
+}
+
+footer {
+  margin-top: 70px;
+}
+
+@media screen and (max-width: 1000px) {
+  footer {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  footer {
+    margin-top: 50px;
+  }
+}

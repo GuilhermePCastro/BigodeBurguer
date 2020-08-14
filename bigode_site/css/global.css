@@ -1,0 +1,163 @@
+button {
+  border: none;
+  outline: none !important;
+}
+
+body {
+  background: url('../imgs/background.png');
+  font-family: 'Bree Serif', serif;
+  overflow-x: hidden;
+}
+
+body, html{
+  margin: 0;
+  padding: 0;
+}
+
+body *{
+  box-sizing: border-box !important; 
+  font-family: 'Bree Serif', serif;
+}
+
+.mycontainer {
+  max-width: 1225px;
+  margin: auto;
+  padding: 0;
+}
+
+@media screen and (max-width: 1250px) {
+  .mycontainer {
+    padding: 0 20px;
+  }
+}
+
+.mycontainer2 {
+  max-width: 1085px;
+  margin: auto;
+  padding: 0;
+}
+
+@media screen and (max-width: 1250px) {
+  .mycontainer2 {
+    padding: 0 40px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .mycontainer2 {
+    padding: 0 20px;
+  }
+}
+
+.title {
+  font-family: 'Bree Serif', serif;
+  color: #B02829;
+  font-size: 90px;
+  text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.73);
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 3rem;
+  margin-top: 3rem;
+}
+
+@media screen and (max-width: 1020px) {
+  .title {
+    font-size: 70px;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
+}
+
+/* @media screen and (max-width: 1000px) {
+  .title {
+    font-size: 60px;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+  }
+} */
+
+@media screen and (max-width: 770px) {
+  .title {
+    font-size: 60px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .title {
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .title {
+    font-size: 45px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .title {
+    font-size: 38px;
+  }
+}
+
+@media screen and (max-width: 370px) {
+  .title {
+    font-size: 32px;
+  }
+}
+
+.button-delivery {
+  font-family: 'Bree Serif', serif;
+  background: #9C1717;
+  height: 90px;
+
+  text-transform: uppercase;
+  text-decoration: none !important;
+  font-size: 40px;
+  width: 100%;
+  color: #FFF;
+  border-radius: 10px;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-shadow: 0 3px 6px rgba(24, 23, 23, 0.404);
+}
+
+.button-delivery:hover {
+  background: rgb(185, 23, 23);
+  box-shadow: 0 3px 6px rgba(24, 23, 23, 0.801);
+  color: #FFF;
+}
+
+.button-delivery:active {
+  opacity: 0.8;
+}
+
+.button-delivery i{
+  margin-right: 25px;
+  margin-top: 5px;
+  font-size: 50px;
+}
+
+@media screen and (max-width: 675px) {
+  .button-delivery {
+    height: 75px;
+    font-size: 32px;
+  }
+  .button-delivery i{
+    font-size: 50px;
+  }
+}
+
+@media screen and (max-width: 450px) {
+  .button-delivery {
+    height: 55px;
+    font-size: 28px;
+  }
+  .button-delivery i{
+    font-size: 32px;
+  }
+}
+

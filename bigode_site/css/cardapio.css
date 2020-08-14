@@ -1,0 +1,888 @@
+.header__banner img{
+  width: 100%;
+}
+
+.snacks__div{
+    overflow: hidden !important;
+    margin: 0 !important;
+    width: 99vw;
+    background:linear-gradient(rgb(0,0,0,0.7), rgb(0,0,0,0.7)), url('../imgs/chapeira.png') no-repeat bottom !important;
+}
+
+.main__snacks{
+    padding: 0px;
+}
+
+.menu__header {
+  text-align: left;
+}
+
+.menu__header .title{
+  text-align: left !important;
+  margin: 0;
+}
+
+.menu__header .font__span{
+  margin-left: 0;
+}
+
+.font__span{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 30px;
+    font-weight:bold ;
+    text-shadow: 0px 3px 6px #00000029;
+    margin-left: 30px;
+    color: rgba(69, 60, 55, 1);
+}
+
+@media screen and (max-width: 1020px) {
+  .font__span {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 1020px) {
+  .font__span {
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 580px) {
+  .font__span {
+    font-size: 20px;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .font__span {
+    font-size: 18px;
+  }
+}
+
+/* @media screen and (max-width: 370px) {
+  .font__span {
+    font-size: 24px;
+  }
+} */
+
+
+.font__span span{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.title__papel {
+    font-family: 'Bree Serif', serif;
+    color: #B02829;
+    font-size: 90px;
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.73);
+    text-transform: uppercase;
+    text-align: left;
+    margin-left: 30px;
+}
+
+.main__menu {
+  margin-bottom: 10px;
+}
+
+.menu__option {
+    opacity: 1;
+    text-align: left;
+    border-radius: 10px;
+    /* height: 250px !important; */
+    width: 100% !important;
+    margin-left: 0px !important;
+
+    /* border: 3px solid red; */
+    cursor: pointer;
+    box-shadow: 3px 3px 12px #000;
+
+    margin-bottom: 60px;
+}
+
+@media screen and (max-width: 1200px) {
+  .menu__option {
+    margin-bottom: 50px;
+}
+}
+
+@media screen and (max-width: 840px) {
+  .menu__option {
+    margin-bottom: 40px;
+}
+}
+
+@media screen and (max-width: 540px) {
+  .menu__option {
+    margin-bottom: 35px;
+}
+}
+
+@media screen and (max-width: 445px) {
+  .menu__option {
+    margin-bottom: 30px;
+}
+}
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.item__appearance {
+    background: url('../imgs/FundoOpcoes.png') no-repeat ;
+    background-color: none;
+    border-radius: 10px;
+    height: 100%;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.73);
+    text-transform: uppercase;
+    font-size: 90px;
+    color: #F7F7F7;
+
+    padding: 0 70px 0 50px;
+
+    height: 240px;
+}
+
+.item__appearance img{
+  filter: grayscale(100%);
+    -webkit-filter: grayscale(100%);
+    -moz-filter: grayscale(100%);
+    -ms-filter: grayscale(100%);
+    -o-filter: grayscale(100%)
+}
+
+.menu__option--lanches  img{
+  width: 180px;
+}
+.menu__option--porcoes  img{
+  width: 170px;
+}
+.menu__option--bebidas .item__appearance img{
+  width: 120px;
+  position: relative;
+  bottom: 20px;
+}
+.menu__option--cervejas  img{
+  width: 170px;
+}
+.menu__option--acai  img{
+  width: 190px;
+}
+
+.menu__option--bebidas .list__header span::after{
+  display: none;
+}
+
+@media screen and (max-width: 750px) {
+  .list---group {
+    flex-direction: column;
+  }
+
+  ul:nth-child(2) {
+    margin-top: 0 !important;
+  }
+}
+
+.menu__option--bolo  img{
+  width: 190px;
+}
+
+@media screen and (max-width: 1130px){
+  .item__appearance {
+    font-size: 80px;
+  }
+}
+
+@media screen and (max-width: 1030px){
+  .item__appearance {
+    font-size: 70px;
+  }
+}
+
+@media screen and (max-width: 945px){
+  .item__appearance {
+    font-size: 70px;
+    padding: 0 60px 0 40px;
+    height: 220px;
+  }
+  .menu__option--lanches  img{
+    width: 150px;
+  }
+  .menu__option--porcoes  img{
+    width: 150px;
+  }
+  .menu__option--bebidas  img{
+    width: 100px;
+  }
+  .menu__option--cervejas  img{
+    width: 150px;
+  }
+  .menu__option--acai  img{
+    width: 170px;
+  }
+  .menu__option--bolo  img{
+    width: 170px;
+  }
+  .menu__option--bolo .item__appearance{
+    font-size: 62px;
+  }
+}
+
+@media screen and (max-width: 840px){
+  .item__appearance {
+    font-size: 60px;
+    padding: 0 60px 0 40px;
+    height: 200px;
+  }
+  .menu__option--lanches  img{
+    width: 130px;
+  }
+  .menu__option--porcoes  img{
+    width: 130px;
+  }
+  .menu__option--bebidas  img{
+    width: 100px !important;
+  }
+  .menu__option--cervejas  img{
+    width: 130px;
+  }
+  .menu__option--acai  img{
+    width: 150px;
+  }
+  .menu__option--bolo  img{
+    width: 150px;
+  }
+  .menu__option--bolo .item__appearance{
+    font-size: 52px;
+  }
+}
+
+@media screen and (max-width: 800px){
+  .item__appearance {
+    font-size: 50px;
+    padding: 0 50px 0 35px;
+    height: 180px;
+  }
+  .menu__option--bolo .item__appearance{
+    font-size: 47px;
+  }
+}
+
+@media screen and (max-width: 750px){
+  .item__appearance {
+    font-size: 50px;
+    padding: 0 50px 0 35px;
+    height: 180px;
+  }
+  .menu__option--lanches  img{
+    width: 130px;
+  }
+  .menu__option--porcoes  img{
+    width: 130px;
+  }
+  .menu__option--bebidas  img{
+    width: 100px !important;
+  }
+  .menu__option--cervejas  img{
+    width: 130px;
+  }
+  .menu__option--acai  img{
+    width: 150px;
+  }
+  .menu__option--bolo  img{
+    width: 150px;
+  }
+  .menu__option--bolo .item__appearance{
+    font-size: 47px;
+  }
+}
+
+@media screen and (max-width: 700px){
+  .item__appearance {
+    font-size: 50px;
+    padding: 0 40px 0 35px;
+    height: 160px;
+  }
+  .menu__option--lanches  img{
+    width: 110px;
+  }
+  .menu__option--porcoes  img{
+    width: 100px;
+  }
+  .menu__option--bebidas  img{
+    width: 80px !important;
+  }
+  .menu__option--cervejas  img{
+    width: 110px;
+  }
+  .menu__option--acai  img{
+    width: 130px;
+  }
+  .menu__option--bolo  img{
+    width: 130px;
+  }
+  .menu__option--bolo .item__appearance{
+    font-size: 43px;
+  }
+}
+
+@media screen and (max-width: 620px){
+  .menu__option--bolo .item__appearance{
+    font-size: 40px;
+  }
+}
+
+@media screen and (max-width: 600px){
+  .item__appearance {
+    font-size: 43px;
+    padding: 0 30px 0 30px;
+    height: 140px;
+  }
+  .menu__option--lanches  img{
+    width: 110px;
+  }
+  .menu__option--porcoes  img{
+    width: 100px;
+  }
+  .menu__option--bebidas  img{
+    width: 80px !important;
+  }
+  .menu__option--cervejas  img{
+    width: 110px;
+  }
+  .menu__option--acai  img{
+    width: 120px;
+  }
+  .menu__option--bolo  img{
+    width: 120px;
+  }
+  .menu__option--bolo .item__appearance{
+    font-size: 37px;
+  }
+}
+
+@media screen and (max-width: 540px){
+  .item__appearance {
+    font-size: 43px;
+    padding: 0 30px 0 30px;
+    height: 120px;
+  }
+  .menu__option--lanches  img{
+    width: 90px;
+  }
+  .menu__option--porcoes  img{
+    width: 80px;
+  }
+  .menu__option--bebidas  img{
+    width: 70px !important;
+  }
+  .menu__option--cervejas  img{
+    width: 85px;
+  }
+  .menu__option--acai  img{
+    width: 100px;
+  }
+  .menu__option--bolo  img{
+    width: 100px;
+  }
+  .menu__option--bolo .item__appearance{
+    font-size: 35px;
+  }
+}
+
+@media screen and (max-width: 500px){
+  .item__appearance {
+    font-size: 35px;
+    padding: 0 30px 0 30px;
+    height: 110px;
+  }
+  .menu__option--lanches  img{
+    width: 80px;
+  }
+  .menu__option--porcoes  img{
+    width: 70px;
+  }
+  .menu__option--bebidas  img{
+    width: 60px !important;
+  }
+  .menu__option--cervejas  img{
+    width: 75px;
+  }
+  .menu__option--acai  img{
+    width: 90px;
+  }
+  .menu__option--bolo  img{
+    width: 90px;
+  }
+  .menu__option--bolo .item__appearance{
+    font-size: 30px;
+  }
+}
+
+@media screen and (max-width: 445px){
+  .item__appearance {
+    font-size: 32px;
+    padding: 0 25px 0 25px;
+    height: 100px;
+  }
+  .menu__option--lanches  img{
+    width: 75px;
+  }
+  .menu__option--porcoes  img{
+    width: 65px;
+  }
+  .menu__option--bebidas  img{
+    width: 55px !important;
+  }
+  .menu__option--cervejas  img{
+    width: 70px;
+  }
+  .menu__option--acai  img{
+    width: 85px;
+  }
+  .menu__option--bolo  img{
+    width: 85px;
+  }
+  .menu__option--bolo .item__appearance{
+    font-size: 27px;
+  }
+}
+
+@media screen and (max-width: 420px){
+  .item__appearance {
+    font-size: 32px;
+    padding: 0 20px 0 20px;
+    height: 100px;
+  }
+}
+
+@media screen and (max-width: 400px){
+  .item__appearance {
+    font-size: 28px;
+    padding: 0 20px 0 20px;
+    height: 90px;
+  }
+  .menu__option--lanches  img{
+    width: 65px;
+  }
+  .menu__option--porcoes  img{
+    width: 55px;
+  }
+  .menu__option--bebidas  img{
+    width: 45px !important;
+  }
+  .menu__option--cervejas  img{
+    width: 60px;
+  }
+  .menu__option--acai  img{
+    width: 75px;
+  }
+  .menu__option--bolo  img{
+    width: 70px;
+  }
+  .menu__option--bolo .item__appearance{
+    font-size: 24px;
+  }
+}
+
+@media screen and (max-width: 360px){
+  .item__appearance {
+    font-size: 25px;
+    padding: 0 15px 0 15px;
+    height: 80px;
+  }
+  .menu__option--lanches  img{
+    width: 60px;
+  }
+  .menu__option--porcoes  img{
+    width: 50px;
+  }
+  .menu__option--bebidas  img{
+    width: 40px !important;
+  }
+  .menu__option--cervejas  img{
+    width: 55px;
+  }
+  .menu__option--acai  img{
+    width: 65px;
+  }
+  .menu__option--bolo  img{
+    width: 60px;
+  }
+  .menu__option--bolo .item__appearance{
+    font-size: 20px;
+  }
+}
+
+.option__list {
+  list-style: none;
+  padding: 0;
+  display: flex;
+}
+
+.option__list div{
+    width: 100%;
+}
+
+.option__list div + div{
+    margin-left: 30px;
+}
+
+.option__list li{
+    border-bottom: 2px solid #000;
+    margin-bottom: 10px;
+}
+
+.option__header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 2px 10px;
+
+    text-transform: uppercase;
+    color: #f7f7f7;
+
+    margin-bottom: 5px;
+}
+
+.menu__option--lanches .option__header{
+  background: #D42631 ;
+}
+.menu__option--porcoes .option__header{
+  background: #F4B005 ;
+}
+.menu__option--bebidas .option__header{
+  background: #D42631 ;
+}
+.menu__option--cervejas .option__header{
+  background: #F8A700 ;
+}
+.menu__option--acai .option__header{
+  background: #762C74 ;
+}
+.menu__option--bolo .option__header{
+  background: #5C2B08 ;
+}
+
+.option__header h3, .option__header span{
+    text-shadow: 0px 3px 6px rgba(0, 0, 0, 0.73);
+    font-size: 20px !important;
+    padding: 0;
+    margin: 0;
+}
+
+@media screen and (max-width:945px){
+  .option__header h3, .option__header span{
+    font-size: 18px !important;
+  }
+  .option__list p{
+    font-size: 16px;
+  }
+}
+
+/* @media screen and (max-width:945px){
+  .option__header h3, .option__header span{
+    font-size: 18px !important;
+  }
+  .option__list p{
+    font-size: 16px;
+  }
+} */
+
+@media screen and (max-width:860px){
+  .option__header h3, .option__header span{
+    font-size: 16px !important;
+  }
+  .option__list p{
+    font-size: 14px;
+  }
+}
+
+/* ================================
+    Animations
+================================= */
+input[type=checkbox]:checked  + .menu__option img,
+.menu__option:hover img {
+  filter: grayscale(0%);
+  -webkit-filter: grayscale(0%);
+  -moz-filter: grayscale(0%);
+  -ms-filter: grayscale(0%);
+  -o-filter: grayscale(0%);
+  
+}
+
+/* ------------------------------ 
+  ANIMAÇÕES AO CLICAR
+-------------------------------- */
+
+.option__list {
+  display: none;
+}
+
+input[type=checkbox]:checked + .menu__option .option__list,
+input[type=checkbox]:checked + .menu__option  .list__full-title{
+  display: flex;
+}
+
+/* lanches */
+input[type=checkbox]:checked + .menu__option{
+  background: #F8F2F2;
+}
+
+input[type=checkbox]:checked + .menu__option .item__appearance{
+  background-color: #F8F2F2 !important;
+}
+
+input[type=checkbox]:checked + .menu__option--lanches
+.item__appearance{
+  background: url('../imgs/backgrounds-home/background-lanches.png') no-repeat bottom;
+}
+
+input[type=checkbox]:checked + .menu__option .item__appearance {
+  height: 280px;
+}
+
+@media screen and (max-width: 1050px) {
+  input[type=checkbox]:checked + .menu__option .item__appearance {
+    height: 250px;
+  }
+}
+
+@media screen and (max-width: 945px) {
+  input[type=checkbox]:checked + .menu__option .item__appearance {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 945px) {
+  input[type=checkbox]:checked + .menu__option .item__appearance {
+    height: 200px;
+  }
+}
+
+@media screen and (max-width: 775px) {
+  input[type=checkbox]:checked + .menu__option .item__appearance {
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  input[type=checkbox]:checked + .menu__option .item__appearance {
+    height: 180px;
+  }
+}
+
+@media screen and (max-width: 615px) {
+  input[type=checkbox]:checked + .menu__option .item__appearance {
+    height: 160px;
+  }
+}
+
+@media screen and (max-width: 540px) {
+  input[type=checkbox]:checked + .menu__option .item__appearance {
+    height: 130px;
+  }
+}
+
+input[type=checkbox]:checked + .menu__option img{ 
+  position: relative;
+  right: 11%;
+  top: 13%;
+}
+
+input[type=checkbox]:checked + .menu__option--bebidas img{ 
+  top: 0;
+}
+
+.menu__option--porcoes img{ 
+  margin-right: 1%;
+}
+
+.menu__option--bebidas img{ 
+  margin-right: 3%;
+}
+
+.menu__option--lanches:hover .item__appearance {
+  background: url('../imgs/backgrounds-home/background-lanches.png') no-repeat top center;
+}
+/* fim lanches */
+
+/* Porções */
+input[type=checkbox]:checked + .menu__option--porcoes{
+  background: #F8F2F2;
+}
+
+input[type=checkbox]:checked + .menu__option--porcoes
+.item__appearance {
+  background: url('../imgs/backgrounds-home/background-porcoes.png') no-repeat bottom;
+}
+
+.menu__option--porcoes:hover .item__appearance {
+  background: url('../imgs/backgrounds-home/background-porcoes.png') no-repeat top center;
+}
+/* FIM Porções */
+
+/* BEBIDAS */
+input[type=checkbox]:checked + .menu__option--bebidas{
+  background: #F8F2F2;
+}
+input[type=checkbox]:checked + .menu__option--bebidas
+.item__appearance {
+  background: url('../imgs/backgrounds-home/background-bebidas.png') no-repeat bottom;
+}
+
+.menu__option--bebidas:hover .item__appearance {
+  background: url('../imgs/backgrounds-home/background-bebidas.png') no-repeat top center;
+}
+/* FIM BEBIDAS */
+
+/* CERVEJAS */
+input[type=checkbox]:checked + .menu__option--cervejas{
+  background: #F8F2F2;
+}
+input[type=checkbox]:checked + .menu__option--cervejas 
+.item__appearance {
+  background: url('../imgs/backgrounds-home/background-cervejas.png') no-repeat bottom;
+}
+
+.menu__option--cervejas:hover .item__appearance {
+  background: url('../imgs/backgrounds-home/background-cervejas.png') no-repeat top center;
+}
+/* CERVEJAS */
+
+/* AÇAÍ */
+input[type=checkbox]:checked + .menu__option--acai{
+  background: #F8F2F2;
+}
+input[type=checkbox]:checked + .menu__option--acai 
+.item__appearance {
+  background: url('../imgs/backgrounds-home/background-acai.png') no-repeat bottom;
+}
+
+.menu__option--acai:hover .item__appearance {
+  background: url('../imgs/backgrounds-home/background-acai.png') no-repeat top center;
+}
+
+/* AÇAÍ */
+
+/* BOLO */
+input[type=checkbox]:checked + .menu__option--bolo{
+  background: #F8F2F2;
+}
+input[type=checkbox]:checked + .menu__option--bolo
+.item__appearance {
+  background: url('../imgs/backgrounds-home/background-bolo.png') no-repeat bottom;
+}
+
+@media screen and (min-width: 945px) {
+  input[type=checkbox]:checked + .menu__option--bolo .item__appearance {
+    height: 240px;
+  }
+  input[type=checkbox]:checked + .menu__option--acai .item__appearance {
+    height: 240px;
+  }
+}
+
+.menu__option--bolo:hover .item__appearance {
+  background: url('../imgs/backgrounds-home/background-bolo.png') no-repeat top center;
+}
+
+footer {
+  margin-top: 70px;
+}
+
+@media screen and (max-width: 1000px) {
+  footer {
+    margin-top: 60px;
+  }
+}
+
+@media screen and (max-width: 675px) {
+  footer {
+    margin-top: 50px;
+  }
+}
+
+/* =========================
+  Padding list
+============================*/
+.padding-list{
+  padding: 45px 30px 30px 30px;
+}
+
+@media screen and (max-width: 1250px) {
+  .padding-list {
+    padding: 45px 25px 30px 25px; 
+  }
+}
+
+@media screen and (max-width: 750px) {
+  .padding-list {
+    padding: 40px 22px 20px 22px;
+    flex-direction: column;
+  }
+  .option__list div + div{
+    margin-left: 0px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .padding-list {
+    padding: 30px 22px 10px 22px;
+  }
+}
+
+@media screen and (max-width: 700px) {
+  .padding-list {
+    padding: 25px 22px 10px 22px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .padding-list {
+    padding: 20px 22px 10px 22px;
+  }
+}
+
+.menu__option--cervejas:hover .item__appearance,
+.menu__option--lanches:hover .item__appearance,
+.menu__option--porcoes:hover .item__appearance,
+.menu__option--bebidas:hover .item__appearance {
+  background-size: calc(100% + 25%);
+}
+
+.menu__option--acai:hover .item__appearance,
+.menu__option--bolo:hover .item__appearance {
+  background-size: calc(100% + 40%);
+}
+
+@media screen and (max-width: 1090px) {
+  .menu__option--cervejas:hover .item__appearance,
+  .menu__option--lanches:hover .item__appearance,
+  .menu__option--porcoes:hover .item__appearance,
+  .menu__option--bebidas:hover .item__appearance {
+    background-size: calc(100% + 45%);
+  }
+  .menu__option--acai:hover .item__appearance,
+  .menu__option--bolo:hover .item__appearance {
+    background-size: calc(100% + 70%);
+  }
+}
+
+@media screen and (max-width: 660px) {
+  .menu__option--cervejas:hover .item__appearance,
+  .menu__option--lanches:hover .item__appearance,
+  .menu__option--porcoes:hover .item__appearance,
+  .menu__option--bebidas:hover .item__appearance {
+    background-size: calc(100% + 60%);
+  }
+  .menu__option--acai:hover .item__appearance,
+  .menu__option--bolo:hover .item__appearance {
+    background-size: calc(100% + 75%);
+  }
+}
+
