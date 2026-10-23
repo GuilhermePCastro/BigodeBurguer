@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Bigode Burguer's</title>
+        
+        <!-- {# FONT #} -->
+        <link href="https://fonts.googleapis.com/css2?family=Bree+Serif&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400&display=swap" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@300&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+        
+         <!-- {# PROJECT CSS #} -->
+        <link rel="stylesheet" href="./css/reset.css">
+        <link rel="stylesheet" href="./css/global.css">
+        <link rel="stylesheet" href="./css/header.css">
+        <link rel="stylesheet" href="./css/footer.css">
+        <link rel="stylesheet" href="./css/estabelecimento.css">
+
+         <!-- {# BOOTSTRAP #} -->
+        <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+      
+         <!-- {# FONT.AWESOME #} -->
+        <script src="https://kit.fontawesome.com/8455a3d02b.js" crossorigin="anonymous"></script>
+    </head>
+    <body>
+        <header>
+
+            <nav 
+              class= "
+                navbar
+                navbar-expand-lg
+                fixed-top
+              "
+            >
+            <div class="container">
+              <a class=" " href="./index.html">
+                <h1 class="d-none">Bigode Burguers</h1>
+                <img src="./imgs/logo.png" alt="Logo Bigode Burguers">
+              </a>
+        
+              <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <i class="fas fa-bars"></i>
+              </button>
+        
+              <div class="collapse navbar-collapse" id="navbarNav">
+                <ul class="navbar-nav w-100 justify-content-end">
+                    <li class="nav-item">
+                        <a class="nav-link" href=".\index.html">Cardápio<span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=".\monte-o-seu.html">Monte o seu</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href=".\estabelecimento.html">Localização</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href=".\quem-somos.html" tabindex="-1" aria-disabled="true">Quem somos</a>
+                    </li>
+                </ul>
+              </div>
+            </div>
+                
+            </nav>
+        
+            <section class="header__banner">
+              <!-- background image by css -->
+            </section>
+        </header>
+
+        <main>
+            <section id='localizacao' class='container-fluid pt-4 pb-5 mx-auto '>
+                <h2 class='text-center  mx-auto my-5 title'>Localização</h2>
+
+                <div class='row mx-auto pb-5 margin-ajust2 mycontainer2'>
+
+                    <div class='col-11 col-md-10 col-lg-6 info ml-auto'>  
+                        <div>
+                            <address class='m-0 text-white'>Avenida Doutora Nise da Silveira, 100 - Jd das Fontes - SP </address>
+                            <iframe class='maps' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1534.0644433404275!2d-46.75244854720453!3d-23.86688914289163!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94ce35ee29ef2f81%3A0xee8bc3393b008ee7!2sBigode%20burguers!5e0!3m2!1spt-BR!2sbr!4v1590071819718!5m2!1spt-BR!2sbr"  aria-hidden="false" tabindex="0"></iframe>
+                        </div>
+                    </div>
+
+                    <section class='col-11 col-md-10 col-lg-6 mr-auto pt-4 info'>
+
+                        <div class='mb-4 margin-ajust'>
+                            <h2 class='h5 title-loc'>Bigode Burguers<i class="fas fa-utensils icon-loc pl-2 pt-1"></i></h2> 
+                            <p class='text-white'>Localizados em São Paulo, nossa loja conta com um fácil acesso ao transporte público e um estacionamento próprio para 3 carros.</p>
+                        </div>
+
+                        <div class='mb-4 margin-ajust'>
+                            <h2 class='h5 title-loc'>Horário de Funcionamento <i class="far fa-clock icon-loc pl-2 pt-1 "></i></h2> 
+                            <ul class='list-unstyled text-white list-horario'>
+                                <li>
+                                    <span>Domingo e Feriado</span> <span class='pl-3 '>18:00 Às 23:00</span> 
+                                </li>
+                                <li>
+                                    <span class='pr-3'>Terça à Sábado</span> <span class='pl-4 ml-1'> 11:00 Às 23:00</span>
+                                </li>
+                                <li>
+                                    <span class='pr-5 mr-3'>Segunda</span> <span class='ml-3 pl-3 margin-list'> Fechado</span>
+                                </li>
+                            </ul>
+                        </div>
+
+                        <div>
+                            <h2 class='h5 title-loc'>Acessível À Deficientes <i class="fas fa-wheelchair icon-loc pl-2 pt-1"></i></h2>
+                        </div>
+
+                    </section>
+                </div>
+            </section>
+
+        </main>
+
+        <footer>
+            <div id='footer1' >
+                <div id='linha-zap'class='container-fluid  bg-primary p-3'>
+                    <div class='row'>
+                        <span class='col-9 col-md-9 col-sm-10 text-white Footer-Whats pl-4 text-uppercase'>Peça um delivery agora mesmo!!!</span>   
+                        <span class= 'col-3 col-md-3 col-sm-10 pr-5 text-right text-white Footer-Whats '><i class="fab fa-whatsapp text-white  pr-1 fa-lg footer-whats-icon"></i>(11) 97399-9701</span>
+                    </div>
+                </div>
+                <div id='footer'class='container-fluid bg-black p-3 pt-3'>
+                    <div class='row mt-2 footer'>
+                        <div class='col-10 col-md-3 mx-3 '>
+                            <h2 class='h6 text-uppercase title-footer'><i class="fas fa-map-marker-alt pr-3"></i>Localização</h2>
+                            <address class='text-white p-3 text-footer '>
+                                Avenida Doutora Nise da Silveira, 100
+                            </address>
+                        </div>
+                        <hr class='barra'>
+                        <div class='col-10 col-md-4 mx-auto'>
+                            <h2 class='h6 text-uppercase title-footer'><i class="far fa-clock pr-3 "></i>Horário de Atendimento</h2>
+                            <ul class='list-unstyled text-white pt-2 text-footer-li footer-ul'>
+                                <li class='d-flex justify-content-between'>
+                                    <span>Domingo e Feriado</span> 
+                                    <span>18:00 Às 23:00</span> 
+                                </li>
+                                <li class='d-flex justify-content-between'>
+                                    <span>Terça à Sábado</span>
+                                    <span > 11:00 Às 23:00</span>
+                                </li>
+                                <li class='d-flex justify-content-between'>
+                                    <span>Segunda</span> 
+                                    <span> Fechado</span>
+                                </li>
+                            </ul>
+                        </div>
+                        <hr class='barra'>
+                        <div class='col-10 col-md-3 mx-4 '>
+                            <h2 class='text-uppercase title-footer' >Redes Sociais</h2>
+                            <h3 class='subtitle-footer'>Siga a Bigode Burguer's !</h3>
+                            <div class='row'>
+                                <div class='d-flex mx-auto text-center'>
+                                    <a class='text-white' href="https://www.instagram.com/bigodeburguers/" target="_blank"><i class="fab fa-instagram fa-2x px-4 py-2 icon-footer" ></i></a>
+                                    <a class='text-white' href="https://api.whatsapp.com/send?phone=+5511973999701
+                                    &text=Olá, peguei seu contato através do site e gostaria de tirar uma dúvida" target="_blank"><i class="fab fa-whatsapp fa-2x px-4 py-2 icon-footer"></i></a>
+                                    <a class='text-white'href="https://www.facebook.com/bigodeburguers-703618723389482/" target="_blank"><i class="fab fa-facebook-square fa-2x px-4 py-2 icon-footer"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        
+            <div id='footer2'>
+        
+                <div id='linha-zap2'class='container-fluid bg-primary p-3 text-center'>
+                    <div class='row mx-auto'>
+                        <div class='col-10 mx-auto'>
+                            <i class="fab fa-whatsapp text-white fa-2x footer-whats-icon pr-2 icon-footer-zap"></i>
+                            <span class='text-white Footer-Whats2'>(11) 97399-9701</span>
+                        </div>
+                    </div>
+                </div>
+        
+                <div id='footer-2'class='container-fluid bg-black p-3 pt-3'>
+        
+                    <div class='row mx-auto'>
+                        <div class='col-12'>
+                            <h2 id='title-1-atendimento'class='h6 text-uppercase title-footer2 text-left'><i class="far fa-clock pr-3 fa-1x ml-3 pt-4"></i>Horário de Atendimento</h2> 
+                            <h2 id='title-2-atendimento' class='h6 text-uppercase title-footer2 text-left'><i class="far fa-clock pr-3 fa-1x ml-3 pt-4"></i>Atendimento</h2> 
+                        </div>
+                    </div>
+        
+                    <div class='row '>
+                        <div class='col-12'>
+                            <ul class='list-unstyled text-white pt-2 text-footer2-li footer2-ul'>
+                                <li class='d-flex justify-content-between'>
+                                    <span>Domingo e Feriado</span> 
+                                    <span>18:00 Às 23:00</span> 
+                                </li>
+                                <li class='d-flex justify-content-between'>
+                                    <span>Terça à Sábado</span>
+                                    <span > 11:00 Às 23:00</span>
+                                </li>
+                                <li class='d-flex justify-content-between'>
+                                    <span>Segunda</span> 
+                                    <span> Fechado</span>
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                        
+                    <div class='row mt-4 text-center'>
+                        <div class='col-3'>
+                            <a class='text-white icon-footer' href="https://www.google.com/maps/place/Bigode+burguers/@-23.8664898,-46.7546555,17z/data=!3m1!4b1!4m5!3m4!1s0x94ce35ee29ef2f81:0xee8bc3393b008ee7!8m2!3d-23.8664898!4d-46.7524668" target="_blank"><i class="fas fa-map-marker-alt fa-3x px-4 py-2"></i></a>
+                        </div>
+                        <div class='col-3'>
+                            <a class='text-white icon-footer ' href="https://www.instagram.com/bigodeburguers/" target="_blank"><i class="fab fa-instagram fa-3x px-4 py-2 icon-footer" ></i></a>
+                        </div>
+                        <div class='col-3'>
+                            <a class='text-white icon-footer' href="https://api.whatsapp.com/send?phone=+5511973999701
+                            &text=Olá, peguei seu contato através do site e gostaria de tirar uma dúvida" target="_blank"><i class="fab fa-whatsapp fa-3x px-4 py-2 icon-footer"></i></a>
+                        </div>
+                        <div class='col-3'>
+                            <a class='text-white icon-footer ' href="https://www.facebook.com/bigodeburguers-703618723389482/" target="_blank"><i class="fab fa-facebook-square fa-3x px-4 py-2 icon-footer"></i></a>
+                        </div>
+                    </div>
+        
+                </div>
+            </div>
+        
+        </footer>
+    </body>
+</html>
+
+  
